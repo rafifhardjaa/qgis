@@ -6,5 +6,6 @@ dist/
 shots/
 .playwright-mcp/
 
-# Dokumen panduan tidak ikut dipush.
+# Dokumen panduan tidak ikut dipush, kecuali README.md di root proyek.
 *.md
+!README.md
