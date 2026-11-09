@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+}
+
+/* Font disimpan lokal di public/assets/fonts agar tidak ada request pihak ketiga. */
+@font-face {
+  font-family: "Plex Sans";
+  src: url("/assets/fonts/plex-sans-latin.woff2") format("woff2");
+  font-weight: 400 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plex Mono";
+  src: url("/assets/fonts/plex-mono-400-latin.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plex Mono";
+  src: url("/assets/fonts/plex-mono-500-latin.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: #f5f5f7;
+  color: #1d1d1f;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a[href],
+button:not(:disabled),
+summary,
+select,
+label[for],
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid #0e5a43;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Fitur cetak dan bagikan sudah dihapus atas permintaan pemilik. */
