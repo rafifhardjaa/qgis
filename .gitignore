@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+.shots/
+shots/
+.playwright-mcp/
+
+# Dokumen panduan tidak ikut dipush.
+*.md
